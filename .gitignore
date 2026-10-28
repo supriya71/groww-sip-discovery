@@ -17,4 +17,13 @@ __pycache__/
 *.py[cod]
 .venv/
 venv/
+tools/
 .env
+
+# Local-only / private (never publish)
+CLAUDE.md
+data/processed/
+data/export/.ask_usage.json
+
+# Raw + large derived (export bundle is tracked for Cloud deploy)
+# data/raw/* already ignored above

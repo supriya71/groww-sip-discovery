@@ -1,0 +1,193 @@
+{
+  "causes": [
+    {
+      "label": "Underwhelming returns",
+      "code": "UR",
+      "posts": 643,
+      "pct_of_relevant": 13.37,
+      "severity_avg": 2.28,
+      "metric_tree_branch": "drop_trigger",
+      "fixable_under_guardrails": true,
+      "opportunity_score": 69.38,
+      "quotes": [
+        "My Groww app hanged from 2.30pm onwards today while I was trying to redeem mutual funds.",
+        "overall good experience, one stop shop to manage all my mf portfolios."
+      ],
+      "by_source": {
+        "play_store": 643
+      }
+    },
+    {
+      "label": "Mandate / autopay failure",
+      "code": "MD",
+      "posts": 170,
+      "pct_of_relevant": 3.54,
+      "severity_avg": 3.46,
+      "metric_tree_branch": "drop_trigger",
+      "fixable_under_guardrails": true,
+      "opportunity_score": 54.14,
+      "quotes": [
+        "Setting up Autopay doesn't work for me because my SIPs are over 15k, took me 5 calls to customer service to figure out why!",
+        "If you are looking for an app to invest in MF and NPS, I would strongly recommend not to ever use Paytm Money."
+      ],
+      "by_source": {
+        "play_store": 170
+      }
+    },
+    {
+      "label": "Cash flow / EMI pressure",
+      "code": "CF",
+      "posts": 47,
+      "pct_of_relevant": 0.98,
+      "severity_avg": 2.36,
+      "metric_tree_branch": "drop_trigger",
+      "fixable_under_guardrails": true,
+      "opportunity_score": 19.42,
+      "quotes": [
+        "I have worst experience faced from last 4 months I have stopped one mutual fund but continue amount will be deduct from my bank account and after rejection I have to many more reminder do to customer ",
+        "I have a 2+ years long running issue where the app would not let me delete or even pause nps sip because the app is not able to get api response back."
+      ],
+      "by_source": {
+        "play_store": 47
+      }
+    },
+    {
+      "label": "Market fear / volatility",
+      "code": "MF",
+      "posts": 27,
+      "pct_of_relevant": 0.56,
+      "severity_avg": 2.37,
+      "metric_tree_branch": "drop_trigger",
+      "fixable_under_guardrails": false,
+      "opportunity_score": 9.85,
+      "quotes": [
+        "Groww betrays you when need the most SLOWED THE WINDOW LIKE TORTOISE",
+        "I have purchased a stock at 158 rupees it shows 164 and"
+      ],
+      "by_source": {
+        "play_store": 27
+      }
+    }
+  ],
+  "problems_after_stopping": [
+    {
+      "label": "stopped_or_cancelled",
+      "code": "STO",
+      "posts": 104,
+      "pct_of_relevant": 2.16,
+      "severity_avg": 4.38,
+      "metric_tree_branch": "lapse_type",
+      "fixable_under_guardrails": false,
+      "opportunity_score": 44.67,
+      "quotes": [
+        "I had invested in 3 different sip and i was continuously paying from my one of bank account but when i noticed that in all that sip the default bank is other one and now i am not able to change my def",
+        "I opened a few ELSS Mfs Sips."
+      ],
+      "by_source": {
+        "play_store": 104
+      }
+    },
+    {
+      "label": "paused_sip",
+      "code": "PAU",
+      "posts": 40,
+      "pct_of_relevant": 0.83,
+      "severity_avg": 4.28,
+      "metric_tree_branch": "lapse_type",
+      "fixable_under_guardrails": true,
+      "opportunity_score": 29.78,
+      "quotes": [
+        "I have reduced rating after 4 years of usage since customer care team is missing in this company.",
+        "New update is pathetic, in this recession time I want to pause my investment and suddenly app doesn't have sip pause options."
+      ],
+      "by_source": {
+        "play_store": 40
+      }
+    }
+  ],
+  "usability_subthemes": [
+    {
+      "code": "support_access",
+      "label": "Support hard to reach",
+      "posts": 773,
+      "pct_of_relevant": 16.08,
+      "by_source": {
+        "play_store": 773
+      },
+      "quotes": [
+        "I have reduced rating after 4 years of usage since customer care team is missing in this company.",
+        "I had invested in 3 different sip and i was continuously paying from my one of bank account but when i noticed that in all that sip the default bank is other one and now i am not able to change my def"
+      ]
+    },
+    {
+      "code": "navigation_ui",
+      "label": "Confusing navigation or UI",
+      "posts": 237,
+      "pct_of_relevant": 4.93,
+      "by_source": {
+        "play_store": 237
+      },
+      "quotes": [
+        "it also stopped showing brokerage fees like it don't exist.",
+        "You cannot select all your SIPs to cancel them at one go, you would have to select each of them one by one to cancel it and then go to the next."
+      ]
+    },
+    {
+      "code": "auth_login",
+      "label": "Login / OTP / verification",
+      "posts": 220,
+      "pct_of_relevant": 4.58,
+      "by_source": {
+        "play_store": 220
+      },
+      "quotes": [
+        "I opened a few ELSS Mfs Sips.",
+        "When SIP stopped working, absolutely no help received from them."
+      ]
+    },
+    {
+      "code": "sip_flows",
+      "label": "Pause / modify / SIP flow",
+      "posts": 214,
+      "pct_of_relevant": 4.45,
+      "by_source": {
+        "play_store": 214
+      },
+      "quotes": [
+        "I have reduced rating after 4 years of usage since customer care team is missing in this company.",
+        "Setting up Autopay doesn't work for me because my SIPs are over 15k, took me 5 calls to customer service to figure out why!"
+      ]
+    },
+    {
+      "code": "slow_performance",
+      "label": "Slow or laggy",
+      "posts": 105,
+      "pct_of_relevant": 2.18,
+      "by_source": {
+        "play_store": 105
+      },
+      "quotes": [
+        "To change my auto-pay mandate they are taking more than two week and still going on loops.",
+        "Whenever I want to redeem money, it takes five days for the money to be credited."
+      ]
+    },
+    {
+      "code": "app_stability",
+      "label": "Crashes / hangs / won't open",
+      "posts": 41,
+      "pct_of_relevant": 0.85,
+      "by_source": {
+        "play_store": 41
+      },
+      "quotes": [
+        "Money goes from account and doesn't go to Coin or to the mutual fund.",
+        "Very bad experience last 4day ... Continue hang & very slow movements...."
+      ]
+    }
+  ],
+  "denominator": "relevant_tagged_posts",
+  "relevant_n": 4808,
+  "source_mix_relevant": {
+    "play_store": 4808
+  }
+}

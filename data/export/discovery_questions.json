@@ -1,0 +1,660 @@
+[
+  {
+    "id": "Q1",
+    "title": "Why start a SIP, and what do they expect?",
+    "chart": [
+      {
+        "year": 2018,
+        "posts": 8
+      },
+      {
+        "year": 2019,
+        "posts": 4
+      },
+      {
+        "year": 2020,
+        "posts": 10
+      },
+      {
+        "year": 2021,
+        "posts": 16
+      },
+      {
+        "year": 2022,
+        "posts": 40
+      },
+      {
+        "year": 2023,
+        "posts": 40
+      },
+      {
+        "year": 2024,
+        "posts": 25
+      },
+      {
+        "year": 2025,
+        "posts": 28
+      },
+      {
+        "year": 2026,
+        "posts": 73
+      }
+    ],
+    "numbers": [
+      {
+        "label": "Posts tagged for question",
+        "value": 244
+      },
+      {
+        "label": "% of relevant corpus",
+        "value": 5.07
+      },
+      {
+        "label": "Avg severity (1\u20135)",
+        "value": 2.34
+      }
+    ],
+    "quotes": [
+      {
+        "id": "play_store:c3edd8f7-767f-46dc-ae25-f36c49f76f9c",
+        "quote": "I started SIP for a mutual fund from your app that doesn't reflect in the portfolio while the amount gets deducted every month.",
+        "source": "play_store"
+      },
+      {
+        "id": "play_store:76f0c54d-43f9-473d-b52e-4366772fc49a",
+        "quote": "When SIP stopped working, absolutely no help received from them.",
+        "source": "play_store"
+      },
+      {
+        "id": "play_store:1d052ee1-be68-4476-9fe7-87491087e664",
+        "quote": "I have paused an SIP but it automatically got started without any intimation..That's rediculous!!",
+        "source": "play_store"
+      }
+    ],
+    "post_count": 244
+  },
+  {
+    "id": "Q2",
+    "title": "What changes in behaviour after starting?",
+    "chart": [
+      {
+        "year": 2018,
+        "posts": 12
+      },
+      {
+        "year": 2019,
+        "posts": 16
+      },
+      {
+        "year": 2020,
+        "posts": 13
+      },
+      {
+        "year": 2021,
+        "posts": 40
+      },
+      {
+        "year": 2022,
+        "posts": 204
+      },
+      {
+        "year": 2023,
+        "posts": 169
+      },
+      {
+        "year": 2024,
+        "posts": 86
+      },
+      {
+        "year": 2025,
+        "posts": 90
+      },
+      {
+        "year": 2026,
+        "posts": 229
+      }
+    ],
+    "numbers": [
+      {
+        "label": "Posts tagged for question",
+        "value": 859
+      },
+      {
+        "label": "% of relevant corpus",
+        "value": 17.87
+      },
+      {
+        "label": "Avg severity (1\u20135)",
+        "value": 2.63
+      }
+    ],
+    "quotes": [
+      {
+        "id": "play_store:fc58c13a-7404-474a-8f70-d6ec197f2bd0",
+        "quote": "I have reduced rating after 4 years of usage since customer care team is missing in this company.",
+        "source": "play_store"
+      },
+      {
+        "id": "play_store:a87f8b71-c803-4777-8865-b9196ccbfec6",
+        "quote": "I had invested in 3 different sip and i was continuously paying from my one of bank account but when i noticed that in all that sip the default bank is other one and now i am not able to change my def",
+        "source": "play_store"
+      },
+      {
+        "id": "play_store:9dd00729-8432-4364-9cd9-1611273364dd",
+        "quote": "I opened a few ELSS Mfs Sips.",
+        "source": "play_store"
+      }
+    ],
+    "post_count": 859
+  },
+  {
+    "id": "Q3",
+    "title": "What leads to pause, reduce, or stop?",
+    "chart": [
+      {
+        "year": 2018,
+        "posts": 11
+      },
+      {
+        "year": 2019,
+        "posts": 16
+      },
+      {
+        "year": 2020,
+        "posts": 19
+      },
+      {
+        "year": 2021,
+        "posts": 56
+      },
+      {
+        "year": 2022,
+        "posts": 194
+      },
+      {
+        "year": 2023,
+        "posts": 168
+      },
+      {
+        "year": 2024,
+        "posts": 129
+      },
+      {
+        "year": 2025,
+        "posts": 122
+      },
+      {
+        "year": 2026,
+        "posts": 289
+      }
+    ],
+    "numbers": [
+      {
+        "label": "Posts tagged for question",
+        "value": 1004
+      },
+      {
+        "label": "% of relevant corpus",
+        "value": 20.88
+      },
+      {
+        "label": "Avg severity (1\u20135)",
+        "value": 2.72
+      }
+    ],
+    "quotes": [
+      {
+        "id": "play_store:fc58c13a-7404-474a-8f70-d6ec197f2bd0",
+        "quote": "I have reduced rating after 4 years of usage since customer care team is missing in this company.",
+        "source": "play_store"
+      },
+      {
+        "id": "play_store:a87f8b71-c803-4777-8865-b9196ccbfec6",
+        "quote": "I had invested in 3 different sip and i was continuously paying from my one of bank account but when i noticed that in all that sip the default bank is other one and now i am not able to change my def",
+        "source": "play_store"
+      },
+      {
+        "id": "play_store:9dd00729-8432-4364-9cd9-1611273364dd",
+        "quote": "I opened a few ELSS Mfs Sips.",
+        "source": "play_store"
+      }
+    ],
+    "post_count": 1004
+  },
+  {
+    "id": "Q4",
+    "title": "What do investors check, and how often?",
+    "chart": [
+      {
+        "year": 2018,
+        "posts": 14
+      },
+      {
+        "year": 2019,
+        "posts": 17
+      },
+      {
+        "year": 2020,
+        "posts": 19
+      },
+      {
+        "year": 2021,
+        "posts": 64
+      },
+      {
+        "year": 2022,
+        "posts": 128
+      },
+      {
+        "year": 2023,
+        "posts": 84
+      },
+      {
+        "year": 2024,
+        "posts": 128
+      },
+      {
+        "year": 2025,
+        "posts": 113
+      },
+      {
+        "year": 2026,
+        "posts": 150
+      }
+    ],
+    "numbers": [
+      {
+        "label": "Posts tagged for question",
+        "value": 717
+      },
+      {
+        "label": "% of relevant corpus",
+        "value": 14.91
+      },
+      {
+        "label": "Avg severity (1\u20135)",
+        "value": 2.3
+      }
+    ],
+    "quotes": [
+      {
+        "id": "play_store:f86ab012-1336-4066-b594-584725e8428a",
+        "quote": "If you are looking for an app to invest in MF and NPS, I would strongly recommend not to ever use Paytm Money.",
+        "source": "play_store"
+      },
+      {
+        "id": "play_store:afdbba32-b5af-431e-91cf-0f6e5f520016",
+        "quote": "Website is now useless as they have stopped accepting ANY transactions on the website.",
+        "source": "play_store"
+      },
+      {
+        "id": "play_store:c3edd8f7-767f-46dc-ae25-f36c49f76f9c",
+        "quote": "I started SIP for a mutual fund from your app that doesn't reflect in the portfolio while the amount gets deducted every month.",
+        "source": "play_store"
+      }
+    ],
+    "post_count": 717
+  },
+  {
+    "id": "Q5",
+    "title": "In-app confusion or worry",
+    "chart": [
+      {
+        "year": 2018,
+        "posts": 14
+      },
+      {
+        "year": 2019,
+        "posts": 13
+      },
+      {
+        "year": 2020,
+        "posts": 17
+      },
+      {
+        "year": 2021,
+        "posts": 61
+      },
+      {
+        "year": 2022,
+        "posts": 177
+      },
+      {
+        "year": 2023,
+        "posts": 120
+      },
+      {
+        "year": 2024,
+        "posts": 120
+      },
+      {
+        "year": 2025,
+        "posts": 111
+      },
+      {
+        "year": 2026,
+        "posts": 162
+      }
+    ],
+    "numbers": [
+      {
+        "label": "Posts tagged for question",
+        "value": 795
+      },
+      {
+        "label": "% of relevant corpus",
+        "value": 16.53
+      },
+      {
+        "label": "Avg severity (1\u20135)",
+        "value": 2.56
+      }
+    ],
+    "quotes": [
+      {
+        "id": "play_store:da270d82-0d88-48ab-89d0-568ea29e968a",
+        "quote": "Setting up Autopay doesn't work for me because my SIPs are over 15k, took me 5 calls to customer service to figure out why!",
+        "source": "play_store"
+      },
+      {
+        "id": "play_store:3f0fe30a-35b4-4ac8-b1ef-44b6cd21c351",
+        "quote": "it also stopped showing brokerage fees like it don't exist.",
+        "source": "play_store"
+      },
+      {
+        "id": "play_store:f86ab012-1336-4066-b594-584725e8428a",
+        "quote": "If you are looking for an app to invest in MF and NPS, I would strongly recommend not to ever use Paytm Money.",
+        "source": "play_store"
+      }
+    ],
+    "post_count": 795
+  },
+  {
+    "id": "Q6",
+    "title": "Out-of-app coping when unsure",
+    "chart": [
+      {
+        "year": 2019,
+        "posts": 2
+      },
+      {
+        "year": 2020,
+        "posts": 1
+      },
+      {
+        "year": 2021,
+        "posts": 2
+      },
+      {
+        "year": 2022,
+        "posts": 6
+      },
+      {
+        "year": 2023,
+        "posts": 4
+      },
+      {
+        "year": 2024,
+        "posts": 2
+      },
+      {
+        "year": 2025,
+        "posts": 1
+      },
+      {
+        "year": 2026,
+        "posts": 9
+      }
+    ],
+    "numbers": [
+      {
+        "label": "Posts tagged for question",
+        "value": 27
+      },
+      {
+        "label": "% of relevant corpus",
+        "value": 0.56
+      },
+      {
+        "label": "Avg severity (1\u20135)",
+        "value": 2.52
+      }
+    ],
+    "quotes": [
+      {
+        "id": "play_store:e00e8f13-25d7-4ee2-95ea-9bd088e2877a",
+        "quote": "Mandate creation in app is tough.",
+        "source": "play_store"
+      },
+      {
+        "id": "play_store:c006d012-0837-44bb-bc28-fe7529e2840c",
+        "quote": "I'm trying to find ways to cancel one of my sips.",
+        "source": "play_store"
+      },
+      {
+        "id": "play_store:cf2e5afd-21e9-4c44-822f-1b991d679b8e",
+        "quote": "Worst Experience ever : Pathetic load times, Charts fail to load, App",
+        "source": "play_store"
+      }
+    ],
+    "post_count": 27
+  },
+  {
+    "id": "Q7",
+    "title": "Continuers vs quiet drop-offs",
+    "chart": [
+      {
+        "year": 2018,
+        "posts": 67
+      },
+      {
+        "year": 2019,
+        "posts": 75
+      },
+      {
+        "year": 2020,
+        "posts": 98
+      },
+      {
+        "year": 2021,
+        "posts": 203
+      },
+      {
+        "year": 2022,
+        "posts": 551
+      },
+      {
+        "year": 2023,
+        "posts": 425
+      },
+      {
+        "year": 2024,
+        "posts": 300
+      },
+      {
+        "year": 2025,
+        "posts": 333
+      },
+      {
+        "year": 2026,
+        "posts": 518
+      }
+    ],
+    "numbers": [
+      {
+        "label": "Posts tagged for question",
+        "value": 2570
+      },
+      {
+        "label": "% of relevant corpus",
+        "value": 53.45
+      },
+      {
+        "label": "Avg severity (1\u20135)",
+        "value": 2.38
+      }
+    ],
+    "quotes": [
+      {
+        "id": "play_store:fc58c13a-7404-474a-8f70-d6ec197f2bd0",
+        "quote": "I have reduced rating after 4 years of usage since customer care team is missing in this company.",
+        "source": "play_store"
+      },
+      {
+        "id": "play_store:a87f8b71-c803-4777-8865-b9196ccbfec6",
+        "quote": "I had invested in 3 different sip and i was continuously paying from my one of bank account but when i noticed that in all that sip the default bank is other one and now i am not able to change my def",
+        "source": "play_store"
+      },
+      {
+        "id": "play_store:9dd00729-8432-4364-9cd9-1611273364dd",
+        "quote": "I opened a few ELSS Mfs Sips.",
+        "source": "play_store"
+      }
+    ],
+    "post_count": 2570
+  },
+  {
+    "id": "Q8",
+    "title": "Patterns by segment (when stated)",
+    "chart": [
+      {
+        "year": 2018,
+        "posts": 2
+      },
+      {
+        "year": 2020,
+        "posts": 2
+      },
+      {
+        "year": 2021,
+        "posts": 5
+      },
+      {
+        "year": 2022,
+        "posts": 27
+      },
+      {
+        "year": 2023,
+        "posts": 13
+      },
+      {
+        "year": 2024,
+        "posts": 11
+      },
+      {
+        "year": 2025,
+        "posts": 9
+      },
+      {
+        "year": 2026,
+        "posts": 35
+      }
+    ],
+    "numbers": [
+      {
+        "label": "Posts tagged for question",
+        "value": 104
+      },
+      {
+        "label": "% of relevant corpus",
+        "value": 2.16
+      },
+      {
+        "label": "Avg severity (1\u20135)",
+        "value": 2.38
+      }
+    ],
+    "quotes": [
+      {
+        "id": "play_store:c3edd8f7-767f-46dc-ae25-f36c49f76f9c",
+        "quote": "I started SIP for a mutual fund from your app that doesn't reflect in the portfolio while the amount gets deducted every month.",
+        "source": "play_store"
+      },
+      {
+        "id": "play_store:1d052ee1-be68-4476-9fe7-87491087e664",
+        "quote": "I have paused an SIP but it automatically got started without any intimation..That's rediculous!!",
+        "source": "play_store"
+      },
+      {
+        "id": "play_store:b8993cc0-456e-47ec-90a3-bc2630dc56d6",
+        "quote": "I had got a payment mandate in 2021, when I applied for IPO first time.",
+        "source": "play_store"
+      }
+    ],
+    "post_count": 104
+  },
+  {
+    "id": "Q9",
+    "title": "Repeated unmet needs",
+    "chart": [
+      {
+        "year": 2018,
+        "posts": 9
+      },
+      {
+        "year": 2019,
+        "posts": 11
+      },
+      {
+        "year": 2020,
+        "posts": 14
+      },
+      {
+        "year": 2021,
+        "posts": 36
+      },
+      {
+        "year": 2022,
+        "posts": 95
+      },
+      {
+        "year": 2023,
+        "posts": 79
+      },
+      {
+        "year": 2024,
+        "posts": 55
+      },
+      {
+        "year": 2025,
+        "posts": 72
+      },
+      {
+        "year": 2026,
+        "posts": 91
+      }
+    ],
+    "numbers": [
+      {
+        "label": "Posts tagged for question",
+        "value": 462
+      },
+      {
+        "label": "% of relevant corpus",
+        "value": 9.61
+      },
+      {
+        "label": "Avg severity (1\u20135)",
+        "value": 2.68
+      }
+    ],
+    "quotes": [
+      {
+        "id": "play_store:da270d82-0d88-48ab-89d0-568ea29e968a",
+        "quote": "Setting up Autopay doesn't work for me because my SIPs are over 15k, took me 5 calls to customer service to figure out why!",
+        "source": "play_store"
+      },
+      {
+        "id": "play_store:3f0fe30a-35b4-4ac8-b1ef-44b6cd21c351",
+        "quote": "it also stopped showing brokerage fees like it don't exist.",
+        "source": "play_store"
+      },
+      {
+        "id": "play_store:e350c286-cd4f-43ae-b855-a995f7de72c1",
+        "quote": "I am facing a problem with autopay mandate, my SIPs ll stop working but this platform has least interest in solving my query.",
+        "source": "play_store"
+      }
+    ],
+    "post_count": 462
+  }
+]

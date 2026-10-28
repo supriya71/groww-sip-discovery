@@ -1,0 +1,37 @@
+{
+  "exported_at": "2026-10-28T09:33:48.875744+00:00",
+  "data_as_of": "2026-10-28",
+  "tagged_count": 25584,
+  "relevant_count": 4808,
+  "counts": {
+    "tagged": 25584,
+    "relevant": 4808,
+    "by_source": {
+      "play_store": {
+        "tagged": 25584,
+        "relevant": 4808
+      }
+    },
+    "exclude_reddit": {
+      "tagged": 25584,
+      "relevant": 4808,
+      "by_source": {
+        "play_store": {
+          "tagged": 25584,
+          "relevant": 4808
+        }
+      }
+    }
+  },
+  "excluded_staff_replies": 3,
+  "definitions": {
+    "tagged": "Unique items with tag_status=ok after excluding platform staff replies (one record per id in this export).",
+    "relevant": "Tagged items where filter_relevant is 'yes' or tags.relevance_flag is 'Y' (SIP / mutual-fund discovery focus)."
+  },
+  "models": [
+    "openai/gpt-oss-120b",
+    "qwen/qwen3-32b",
+    "rules_fallback"
+  ],
+  "codebook_version": "1.0"
+}

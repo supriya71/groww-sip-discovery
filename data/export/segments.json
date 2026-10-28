@@ -1,0 +1,16 @@
+{
+  "groups": [
+    {
+      "segment_code": "YNG",
+      "segment_label": "young_first_job",
+      "relevant_posts": 104,
+      "lapse_stories": 5,
+      "low_confidence": true
+    }
+  ],
+  "source_mix": {
+    "play_store": 4808
+  },
+  "disclaimer": "Age, income type, and money source are rarely stated in public posts; segment tags are proxies only\u2014validate in interviews.",
+  "lapse_story_threshold": 15
+}

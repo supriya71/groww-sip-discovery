@@ -1,0 +1,167 @@
+{
+  "root": "12-month active SIP (north star)",
+  "branches": [
+    {
+      "field": "journey_stage",
+      "title": "Journey stage",
+      "codes": [
+        {
+          "code": "UNC",
+          "label": "unclear",
+          "posts": 4039
+        },
+        {
+          "code": "S3",
+          "label": "mid_months_4_8",
+          "posts": 525
+        },
+        {
+          "code": "S1",
+          "label": "sip_start",
+          "posts": 244
+        }
+      ]
+    },
+    {
+      "field": "lapse_type",
+      "title": "Lapse behaviour",
+      "codes": [
+        {
+          "code": "NON",
+          "label": "continuing_no_lapse",
+          "posts": 2426
+        },
+        {
+          "code": "UNC",
+          "label": "unclear",
+          "posts": 2238
+        },
+        {
+          "code": "STO",
+          "label": "stopped_or_cancelled",
+          "posts": 104
+        },
+        {
+          "code": "PAU",
+          "label": "paused_sip",
+          "posts": 40
+        }
+      ]
+    },
+    {
+      "field": "drop_trigger",
+      "title": "Drop trigger",
+      "codes": [
+        {
+          "code": "UR",
+          "label": "underwhelming_returns",
+          "posts": 643
+        },
+        {
+          "code": "MD",
+          "label": "mandate_or_autopay_failure",
+          "posts": 170
+        },
+        {
+          "code": "CF",
+          "label": "cash_flow_or_emi_pressure",
+          "posts": 47
+        },
+        {
+          "code": "MF",
+          "label": "market_fear_or_volatility",
+          "posts": 27
+        }
+      ]
+    },
+    {
+      "field": "expectation",
+      "title": "Expectation type",
+      "codes": [
+        {
+          "code": "UNC",
+          "label": "unclear",
+          "posts": 4808
+        }
+      ]
+    },
+    {
+      "field": "in_app_friction",
+      "title": "In-app friction",
+      "codes": [
+        {
+          "code": "NAV",
+          "label": "nav_or_units_confusion",
+          "posts": 281
+        },
+        {
+          "code": "UI",
+          "label": "comparison_or_discovery_ui",
+          "posts": 191
+        },
+        {
+          "code": "PM",
+          "label": "pause_modify_or_cancel_flow",
+          "posts": 163
+        },
+        {
+          "code": "KY",
+          "label": "kyc_or_payment_rail",
+          "posts": 119
+        },
+        {
+          "code": "ST",
+          "label": "statement_or_ledger",
+          "posts": 41
+        }
+      ]
+    },
+    {
+      "field": "investor_segment",
+      "title": "Investor segment (proxy)",
+      "codes": [
+        {
+          "code": "UNC",
+          "label": "unclear",
+          "posts": 4704
+        },
+        {
+          "code": "YNG",
+          "label": "young_first_job",
+          "posts": 104
+        }
+      ]
+    }
+  ],
+  "voluntary_vs_involuntary": {
+    "overall": {
+      "unclear": 4510,
+      "involuntary": 170,
+      "voluntary": 128
+    },
+    "by_source": {
+      "play_store": {
+        "voluntary": 128,
+        "involuntary": 170,
+        "unclear": 4510
+      }
+    },
+    "by_tagger": {
+      "rules_fallback": {
+        "voluntary": 0,
+        "involuntary": 0,
+        "unclear": 10
+      },
+      "openai/gpt-oss-120b": {
+        "voluntary": 125,
+        "involuntary": 165,
+        "unclear": 3142
+      },
+      "qwen/qwen3-32b": {
+        "voluntary": 3,
+        "involuntary": 5,
+        "unclear": 1358
+      }
+    }
+  }
+}

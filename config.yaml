@@ -1,0 +1,22 @@
+# Reddit via Apify — actor, budget, search (see collect/reddit_apify.py)
+
+reddit_apify:
+  actor_id: trudax/reddit-scraper
+  budget_usd: 3.50
+  min_post_year: 2021
+  posts_target: 150
+  comments_per_post: 15
+  test_max_items: 30
+  subreddits:
+    - IndiaInvestments
+    - mutualfunds
+    - personalfinanceindia
+  search_queries:
+    - stopped my SIP
+    - paused SIP
+    - SIP autopay failed
+    - SIP mandate
+    - first SIP negative
+    - should I stop SIP
+    - SIP irregular income
+  manual_threads_file: data/manual/reddit_threads.txt

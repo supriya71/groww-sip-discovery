@@ -1,0 +1,46 @@
+{
+  "pipeline_diagram": [
+    "Source connectors",
+    "Normalize & dedupe",
+    "Enrich (filter + tag)",
+    "Structured store",
+    "Analysis & export",
+    "PM artifacts (this app)"
+  ],
+  "sources": [
+    {
+      "source": "play_store",
+      "tagged_posts": 25584,
+      "relevant_posts": 4808
+    }
+  ],
+  "funnel": [
+    {
+      "stage": "Raw collected",
+      "play_store": 68142,
+      "total": 68142
+    },
+    {
+      "stage": "After dedupe",
+      "play_store": 38240,
+      "total": 38240
+    },
+    {
+      "stage": "After length filter (clean)",
+      "play_store": 25587,
+      "total": 25587
+    }
+  ],
+  "date_coverage": {
+    "min_year": 2018,
+    "max_year": 2026,
+    "posts_from_2021": 24283
+  },
+  "models": [
+    "openai/gpt-oss-120b",
+    "qwen/qwen3-32b",
+    "rules_fallback"
+  ],
+  "source_mix_tagged": "play_store 25,584",
+  "source_mix_relevant": "play_store 4,808"
+}

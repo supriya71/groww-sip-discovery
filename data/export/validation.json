@@ -1,0 +1,728 @@
+{
+  "filter_prompt_version": "rules_fallback_v2 (export re-apply; GROQ unset)",
+  "tag_prompt_version": "codebook_v1 + rules_engine v2",
+  "tag_models": [
+    "openai/gpt-oss-120b",
+    "qwen/qwen3-32b",
+    "rules_fallback"
+  ],
+  "inter_model_agreement": {
+    "checked_at": "2026-10-28T08:34:23.048556+00:00",
+    "n_items": 30,
+    "primary_tagged_by": "openai/gpt-oss-120b",
+    "qwen_tagged_by": "qwen/qwen3-32b",
+    "field_agreement": {
+      "journey_stage": {
+        "agree": 30,
+        "total": 30,
+        "pct": 100.0
+      },
+      "lapse_type": {
+        "agree": 30,
+        "total": 30,
+        "pct": 100.0
+      },
+      "drop_trigger": {
+        "agree": 30,
+        "total": 30,
+        "pct": 100.0
+      },
+      "expectation": {
+        "agree": 30,
+        "total": 30,
+        "pct": 100.0
+      },
+      "in_app_friction": {
+        "agree": 30,
+        "total": 30,
+        "pct": 100.0
+      },
+      "investor_segment": {
+        "agree": 30,
+        "total": 30,
+        "pct": 100.0
+      },
+      "sentiment": {
+        "agree": 30,
+        "total": 30,
+        "pct": 100.0
+      },
+      "relevance_flag": {
+        "agree": 30,
+        "total": 30,
+        "pct": 100.0
+      }
+    },
+    "overall": {
+      "mean_field_agreement_pct": 100.0
+    }
+  },
+  "golden_set_size": 0,
+  "human_corrections": [],
+  "human_corrections_path": "data/manual/corrections.csv",
+  "ai_corrections": [],
+  "tag_audit": {
+    "audited_at": "2026-10-28T09:33:48.792222+00:00",
+    "rule_fix": "pipeline/rules_engine.py v2 (UR MF-only, lapse/stop, sentiment order)",
+    "audits": [
+      {
+        "reason": "NEG_on_positive_opening",
+        "population": 15,
+        "sample_size": 15,
+        "samples": [
+          {
+            "id": "play_store:5b4e1840-d373-4412-8e5e-63342fcdc8a2",
+            "source": "play_store",
+            "quote": "Good UI but bad experience with customer service. They took 3 months",
+            "tags": {
+              "journey_stage": "UNC",
+              "lapse_type": "UNC",
+              "drop_trigger": "NA",
+              "expectation": "UNC",
+              "in_app_friction": "UI",
+              "investor_segment": "UNC",
+              "sentiment": "NEG",
+              "relevance_flag": "U"
+            }
+          },
+          {
+            "id": "play_store:ca93273e-efd1-495b-8852-e85545fa18c5",
+            "source": "play_store",
+            "quote": "Good interface. Will be much better if taxes and other charges for",
+            "tags": {
+              "journey_stage": "UNC",
+              "lapse_type": "UNC",
+              "drop_trigger": "NA",
+              "expectation": "UNC",
+              "in_app_friction": "NA",
+              "investor_segment": "UNC",
+              "sentiment": "NEG",
+              "relevance_flag": "U"
+            }
+          },
+          {
+            "id": "play_store:ce7c6e81-0356-4847-b1b1-752701f3adcd",
+            "source": "play_store",
+            "quote": "Good app using from 5 years but now its not good..Change default",
+            "tags": {
+              "journey_stage": "UNC",
+              "lapse_type": "UNC",
+              "drop_trigger": "NA",
+              "expectation": "UNC",
+              "in_app_friction": "NA",
+              "investor_segment": "UNC",
+              "sentiment": "NEG",
+              "relevance_flag": "U"
+            }
+          },
+          {
+            "id": "play_store:3e83e9ea-0d64-40d6-b3dd-179f28792071",
+            "source": "play_store",
+            "quote": "My ticket regarding pending mutual fund unit allotment was closed even without giving a resolution.",
+            "tags": {
+              "journey_stage": "UNC",
+              "lapse_type": "NON",
+              "drop_trigger": "NA",
+              "expectation": "UNC",
+              "in_app_friction": "NAV",
+              "investor_segment": "UNC",
+              "sentiment": "NEG",
+              "relevance_flag": "Y"
+            }
+          },
+          {
+            "id": "play_store:f20c91b9-0ba2-4b71-97cf-9622b99fd47e",
+            "source": "play_store",
+            "quote": "Goodbye Paytm money forcefully opening demat account . Worst customer service, no",
+            "tags": {
+              "journey_stage": "UNC",
+              "lapse_type": "UNC",
+              "drop_trigger": "NA",
+              "expectation": "UNC",
+              "in_app_friction": "NA",
+              "investor_segment": "UNC",
+              "sentiment": "NEG",
+              "relevance_flag": "U"
+            }
+          },
+          {
+            "id": "play_store:26b669a5-3144-405e-a5df-f6bed49914c7",
+            "source": "play_store",
+            "quote": "Good points: User friendly, Good analysis from team, one financial app for",
+            "tags": {
+              "journey_stage": "UNC",
+              "lapse_type": "UNC",
+              "drop_trigger": "NA",
+              "expectation": "UNC",
+              "in_app_friction": "NA",
+              "investor_segment": "UNC",
+              "sentiment": "NEG",
+              "relevance_flag": "U"
+            }
+          },
+          {
+            "id": "play_store:a71f1daf-24f8-4e77-bcb2-e211ab06526a",
+            "source": "play_store",
+            "quote": "Good Experience Worst Customer Support Nil Quiery Resolve Please Improve Customer Support",
+            "tags": {
+              "journey_stage": "UNC",
+              "lapse_type": "UNC",
+              "drop_trigger": "NA",
+              "expectation": "UNC",
+              "in_app_friction": "NA",
+              "investor_segment": "UNC",
+              "sentiment": "NEG",
+              "relevance_flag": "U"
+            }
+          },
+          {
+            "id": "play_store:ebca5496-b75a-421e-b54f-e5f7ccce1d22",
+            "source": "play_store",
+            "quote": "Good for nothing..... After finishing all the steps it doesn't redirect you",
+            "tags": {
+              "journey_stage": "UNC",
+              "lapse_type": "UNC",
+              "drop_trigger": "NA",
+              "expectation": "UNC",
+              "in_app_friction": "NA",
+              "investor_segment": "UNC",
+              "sentiment": "NEG",
+              "relevance_flag": "U"
+            }
+          },
+          {
+            "id": "play_store:bf7f5fb0-eff8-4472-bb2e-6df2a6ee79c3",
+            "source": "play_store",
+            "quote": "Good app with a diversified dashboard. But investment in paytm money is",
+            "tags": {
+              "journey_stage": "UNC",
+              "lapse_type": "UNC",
+              "drop_trigger": "NA",
+              "expectation": "UNC",
+              "in_app_friction": "UI",
+              "investor_segment": "UNC",
+              "sentiment": "NEG",
+              "relevance_flag": "U"
+            }
+          },
+          {
+            "id": "play_store:24cefc37-1738-4e5b-99ba-a38f588cc06a",
+            "source": "play_store",
+            "quote": "Good experience but zerodha new update is worst... P&L statement especially",
+            "tags": {
+              "journey_stage": "UNC",
+              "lapse_type": "UNC",
+              "drop_trigger": "NA",
+              "expectation": "UNC",
+              "in_app_friction": "ST",
+              "investor_segment": "UNC",
+              "sentiment": "NEG",
+              "relevance_flag": "U"
+            }
+          },
+          {
+            "id": "play_store:b9552cb0-77b5-4047-b7ee-09fa9a800707",
+            "source": "play_store",
+            "quote": "good fantastic app law commission ek number ki app hai ekadam Khatarnak",
+            "tags": {
+              "journey_stage": "UNC",
+              "lapse_type": "UNC",
+              "drop_trigger": "NA",
+              "expectation": "UNC",
+              "in_app_friction": "NA",
+              "investor_segment": "UNC",
+              "sentiment": "NEG",
+              "relevance_flag": "U"
+            }
+          },
+          {
+            "id": "play_store:fab2ea5f-9531-47d0-9a1e-664ec78be738",
+            "source": "play_store",
+            "quote": "good application but fund comparison is the worst one. please add something",
+            "tags": {
+              "journey_stage": "UNC",
+              "lapse_type": "UNC",
+              "drop_trigger": "UR",
+              "expectation": "UNC",
+              "in_app_friction": "NA",
+              "investor_segment": "UNC",
+              "sentiment": "NEG",
+              "relevance_flag": "U"
+            }
+          },
+          {
+            "id": "play_store:0ea2cb86-fb73-42fc-8621-a45e8ee85149",
+            "source": "play_store",
+            "quote": "Good For Mutual Fund, Bad for stock",
+            "tags": {
+              "journey_stage": "UNC",
+              "lapse_type": "NON",
+              "drop_trigger": "NA",
+              "expectation": "UNC",
+              "in_app_friction": "NA",
+              "investor_segment": "UNC",
+              "sentiment": "NEG",
+              "relevance_flag": "Y"
+            }
+          },
+          {
+            "id": "play_store:53362dfe-ab37-46a5-87f3-ddf6fda91266",
+            "source": "play_store",
+            "quote": "Good app for mutual fund investment one of the best app for mutual funds but customer care pathetic taking weeks to solve simple issue and now this ad pop up ru",
+            "tags": {
+              "journey_stage": "UNC",
+              "lapse_type": "NON",
+              "drop_trigger": "NA",
+              "expectation": "UNC",
+              "in_app_friction": "NA",
+              "investor_segment": "UNC",
+              "sentiment": "NEG",
+              "relevance_flag": "Y"
+            }
+          },
+          {
+            "id": "play_store:651941c6-888a-408d-8384-41d984349621",
+            "source": "play_store",
+            "quote": "If you want know anything about any MF than it will redirect to the MF site.",
+            "tags": {
+              "journey_stage": "UNC",
+              "lapse_type": "UNC",
+              "drop_trigger": "NA",
+              "expectation": "UNC",
+              "in_app_friction": "NA",
+              "investor_segment": "UNC",
+              "sentiment": "NEG",
+              "relevance_flag": "U"
+            }
+          }
+        ]
+      },
+      {
+        "reason": "POS_with_negative_words",
+        "population": 7,
+        "sample_size": 7,
+        "samples": [
+          {
+            "id": "play_store:d4bb4fe3-5ac6-400e-91c3-cb6c0a175da7",
+            "source": "play_store",
+            "quote": "Trades/Investment UI/UX is smooth. But visualisation is terrible. Charts are very slow",
+            "tags": {
+              "journey_stage": "UNC",
+              "lapse_type": "UNC",
+              "drop_trigger": "NA",
+              "expectation": "UNC",
+              "in_app_friction": "KY",
+              "investor_segment": "UNC",
+              "sentiment": "POS",
+              "relevance_flag": "U"
+            }
+          },
+          {
+            "id": "play_store:c8031c34-13ef-4137-b095-e042612a84e6",
+            "source": "play_store",
+            "quote": "Best app for trading and investing...what I like the most is Quick",
+            "tags": {
+              "journey_stage": "UNC",
+              "lapse_type": "UNC",
+              "drop_trigger": "NA",
+              "expectation": "UNC",
+              "in_app_friction": "NA",
+              "investor_segment": "UNC",
+              "sentiment": "POS",
+              "relevance_flag": "U"
+            }
+          },
+          {
+            "id": "play_store:b6db609b-dce6-43c9-b2a5-649cdf519b43",
+            "source": "play_store",
+            "quote": "Terrible customer support. Good UI with many gliches.",
+            "tags": {
+              "journey_stage": "UNC",
+              "lapse_type": "UNC",
+              "drop_trigger": "NA",
+              "expectation": "UNC",
+              "in_app_friction": "UI",
+              "investor_segment": "UNC",
+              "sentiment": "POS",
+              "relevance_flag": "U"
+            }
+          },
+          {
+            "id": "play_store:7ff7f0c1-85a5-413c-9fcc-99e9db0b9a1e",
+            "source": "play_store",
+            "quote": "Now this app is turning \ud83d\udca9. TX are getting rejected. Also why",
+            "tags": {
+              "journey_stage": "UNC",
+              "lapse_type": "UNC",
+              "drop_trigger": "NA",
+              "expectation": "UNC",
+              "in_app_friction": "UI",
+              "investor_segment": "UNC",
+              "sentiment": "POS",
+              "relevance_flag": "U"
+            }
+          },
+          {
+            "id": "play_store:703078f6-6dd6-4751-be7e-0937633d1cf2",
+            "source": "play_store",
+            "quote": "Everything is very good in this app. I have been using it",
+            "tags": {
+              "journey_stage": "UNC",
+              "lapse_type": "UNC",
+              "drop_trigger": "NA",
+              "expectation": "UNC",
+              "in_app_friction": "NA",
+              "investor_segment": "UNC",
+              "sentiment": "POS",
+              "relevance_flag": "U"
+            }
+          },
+          {
+            "id": "play_store:a67edd68-d9e6-4b91-833a-d77809bc6923",
+            "source": "play_store",
+            "quote": "Good app ruined by terrible customer support. 1. They have made it",
+            "tags": {
+              "journey_stage": "UNC",
+              "lapse_type": "UNC",
+              "drop_trigger": "NA",
+              "expectation": "UNC",
+              "in_app_friction": "UI",
+              "investor_segment": "UNC",
+              "sentiment": "POS",
+              "relevance_flag": "U"
+            }
+          },
+          {
+            "id": "play_store:e9b43529-314b-467e-9b83-44263b55964a",
+            "source": "play_store",
+            "quote": "The previous interface was very good. now the new interface is terrible.",
+            "tags": {
+              "journey_stage": "UNC",
+              "lapse_type": "UNC",
+              "drop_trigger": "NA",
+              "expectation": "UNC",
+              "in_app_friction": "NA",
+              "investor_segment": "UNC",
+              "sentiment": "POS",
+              "relevance_flag": "U"
+            }
+          }
+        ]
+      },
+      {
+        "reason": "relevant_yes_weak_MF_signal",
+        "population": 1490,
+        "sample_size": 20,
+        "samples": [
+          {
+            "id": "play_store:1f502d5a-87ca-4529-bca5-383180076e1c",
+            "source": "play_store",
+            "quote": "TRG Lagane ke bad bhi Kuch 5% less point sales ho ja",
+            "tags": {
+              "journey_stage": "UNC",
+              "lapse_type": "UNC",
+              "drop_trigger": "UR",
+              "expectation": "UNC",
+              "in_app_friction": "NA",
+              "investor_segment": "UNC",
+              "sentiment": "NEG",
+              "relevance_flag": "Y"
+            }
+          },
+          {
+            "id": "play_store:09625cc8-85f4-443c-bbb1-9e14ee960047",
+            "source": "play_store",
+            "quote": "When I am open Paytm money app then problem facing is paytm money app has stopped.",
+            "tags": {
+              "journey_stage": "S3",
+              "lapse_type": "UNC",
+              "drop_trigger": "NA",
+              "expectation": "UNC",
+              "in_app_friction": "NA",
+              "investor_segment": "UNC",
+              "sentiment": "NEU",
+              "relevance_flag": "Y"
+            }
+          },
+          {
+            "id": "play_store:accb166a-00d4-41fb-a0c1-535a75da2238",
+            "source": "play_store",
+            "quote": "There is no responsibility from team to help customer for deposit. Taking",
+            "tags": {
+              "journey_stage": "UNC",
+              "lapse_type": "UNC",
+              "drop_trigger": "NA",
+              "expectation": "UNC",
+              "in_app_friction": "NA",
+              "investor_segment": "UNC",
+              "sentiment": "NEU",
+              "relevance_flag": "Y"
+            }
+          },
+          {
+            "id": "play_store:c15a0a83-249f-4bff-b783-b98f3e10f4b4",
+            "source": "play_store",
+            "quote": "position and p&l sown before , and now it's not sown in",
+            "tags": {
+              "journey_stage": "UNC",
+              "lapse_type": "UNC",
+              "drop_trigger": "UR",
+              "expectation": "UNC",
+              "in_app_friction": "NA",
+              "investor_segment": "UNC",
+              "sentiment": "POS",
+              "relevance_flag": "Y"
+            }
+          },
+          {
+            "id": "play_store:e66547a3-02bc-4ef9-8db7-8667e8707ec1",
+            "source": "play_store",
+            "quote": "App is good and friendly but we can not contact to customer",
+            "tags": {
+              "journey_stage": "UNC",
+              "lapse_type": "UNC",
+              "drop_trigger": "NA",
+              "expectation": "UNC",
+              "in_app_friction": "NA",
+              "investor_segment": "UNC",
+              "sentiment": "POS",
+              "relevance_flag": "Y"
+            }
+          },
+          {
+            "id": "play_store:89f3a626-13a9-4442-b62e-d58d81e4ca0d",
+            "source": "play_store",
+            "quote": "Technical glitches inside app made me losses because I was not able",
+            "tags": {
+              "journey_stage": "UNC",
+              "lapse_type": "UNC",
+              "drop_trigger": "NA",
+              "expectation": "UNC",
+              "in_app_friction": "NA",
+              "investor_segment": "UNC",
+              "sentiment": "NEU",
+              "relevance_flag": "Y"
+            }
+          },
+          {
+            "id": "play_store:fd9a3dd2-32c0-4b35-8bb7-0ddf019bc605",
+            "source": "play_store",
+            "quote": "Suddenly my app is stop to login then I have waiting just with a ticket number since 2 month.",
+            "tags": {
+              "journey_stage": "S3",
+              "lapse_type": "UNC",
+              "drop_trigger": "NA",
+              "expectation": "UNC",
+              "in_app_friction": "UI",
+              "investor_segment": "UNC",
+              "sentiment": "POS",
+              "relevance_flag": "Y"
+            }
+          },
+          {
+            "id": "play_store:69e5f1fc-05a2-444b-a154-60a41b6a2f9a",
+            "source": "play_store",
+            "quote": "WORST EVER, HORRIBLE, PATHETIC, POOR and you can add whatever words you",
+            "tags": {
+              "journey_stage": "S1",
+              "lapse_type": "UNC",
+              "drop_trigger": "NA",
+              "expectation": "UNC",
+              "in_app_friction": "NA",
+              "investor_segment": "UNC",
+              "sentiment": "NEG",
+              "relevance_flag": "Y"
+            }
+          },
+          {
+            "id": "play_store:696b9a6b-051b-40a5-8170-469632ede34b",
+            "source": "play_store",
+            "quote": "bakwas app, na koi customer care par sunta hai or na hi",
+            "tags": {
+              "journey_stage": "UNC",
+              "lapse_type": "UNC",
+              "drop_trigger": "NA",
+              "expectation": "UNC",
+              "in_app_friction": "NA",
+              "investor_segment": "UNC",
+              "sentiment": "NEG",
+              "relevance_flag": "Y"
+            }
+          },
+          {
+            "id": "play_store:7d6ca5c4-49a6-40c1-87a7-a63b3fd10a5a",
+            "source": "play_store",
+            "quote": "Chart problem in coming call chart blank not showing .not showing profit",
+            "tags": {
+              "journey_stage": "UNC",
+              "lapse_type": "UNC",
+              "drop_trigger": "NA",
+              "expectation": "UNC",
+              "in_app_friction": "NA",
+              "investor_segment": "UNC",
+              "sentiment": "NEU",
+              "relevance_flag": "Y"
+            }
+          },
+          {
+            "id": "play_store:7f6591af-a3eb-4530-8a79-6d416619a8e7",
+            "source": "play_store",
+            "quote": "Set up auto pay option no need That is invester interest Please",
+            "tags": {
+              "journey_stage": "UNC",
+              "lapse_type": "UNC",
+              "drop_trigger": "NA",
+              "expectation": "UNC",
+              "in_app_friction": "NA",
+              "investor_segment": "UNC",
+              "sentiment": "NEU",
+              "relevance_flag": "Y"
+            }
+          },
+          {
+            "id": "play_store:a7ee6a52-7a0b-4722-b685-675650a4b298",
+            "source": "play_store",
+            "quote": "How to get my profit/loss statement for tax payment. I am not",
+            "tags": {
+              "journey_stage": "UNC",
+              "lapse_type": "UNC",
+              "drop_trigger": "UR",
+              "expectation": "UNC",
+              "in_app_friction": "ST",
+              "investor_segment": "UNC",
+              "sentiment": "NEU",
+              "relevance_flag": "Y"
+            }
+          },
+          {
+            "id": "play_store:879f6758-bff2-4359-8a48-75927d3eee12",
+            "source": "play_store",
+            "quote": "Very bad service, not use your money it will destroy, not execute",
+            "tags": {
+              "journey_stage": "UNC",
+              "lapse_type": "UNC",
+              "drop_trigger": "UR",
+              "expectation": "UNC",
+              "in_app_friction": "NA",
+              "investor_segment": "UNC",
+              "sentiment": "NEG",
+              "relevance_flag": "Y"
+            }
+          },
+          {
+            "id": "play_store:f3fc0f80-9c9a-443e-bb89-1528b63f7576",
+            "source": "play_store",
+            "quote": "Furthermore, the holdings section doesn't accurately reflect the actual amount in my portfolio analysis Stop adding half-baked feature",
+            "tags": {
+              "journey_stage": "S3",
+              "lapse_type": "UNC",
+              "drop_trigger": "NA",
+              "expectation": "UNC",
+              "in_app_friction": "NA",
+              "investor_segment": "UNC",
+              "sentiment": "NEG",
+              "relevance_flag": "Y"
+            }
+          },
+          {
+            "id": "play_store:ca843cd3-3b9c-4cdf-be77-035512a49429",
+            "source": "play_store",
+            "quote": "The app is good if its working but it has some major issue app gets stop again and again even after downloading it so many times .",
+            "tags": {
+              "journey_stage": "S3",
+              "lapse_type": "UNC",
+              "drop_trigger": "NA",
+              "expectation": "UNC",
+              "in_app_friction": "NA",
+              "investor_segment": "UNC",
+              "sentiment": "POS",
+              "relevance_flag": "Y"
+            }
+          },
+          {
+            "id": "play_store:41a58562-94d6-4d91-b0ab-ffc428c757cb",
+            "source": "play_store",
+            "quote": "Whenever i do f&o trading my chart always stop for 2 minutes and i have lot of loss because your poor development of server.",
+            "tags": {
+              "journey_stage": "S3",
+              "lapse_type": "UNC",
+              "drop_trigger": "NA",
+              "expectation": "UNC",
+              "in_app_friction": "NA",
+              "investor_segment": "UNC",
+              "sentiment": "NEU",
+              "relevance_flag": "Y"
+            }
+          },
+          {
+            "id": "play_store:2bf2bb55-3381-4ded-af93-fac6eb8e5d79",
+            "source": "play_store",
+            "quote": "When you sell 'Partial' stock from your 'holding' it doesn't show in",
+            "tags": {
+              "journey_stage": "UNC",
+              "lapse_type": "UNC",
+              "drop_trigger": "UR",
+              "expectation": "UNC",
+              "in_app_friction": "NA",
+              "investor_segment": "UNC",
+              "sentiment": "NEU",
+              "relevance_flag": "Y"
+            }
+          },
+          {
+            "id": "play_store:d9687b8e-4c99-4516-90d7-6d13f084a34e",
+            "source": "play_store",
+            "quote": "Worst........ I'm unable to give zero rating, that's why giving 1, one",
+            "tags": {
+              "journey_stage": "UNC",
+              "lapse_type": "UNC",
+              "drop_trigger": "NA",
+              "expectation": "UNC",
+              "in_app_friction": "NA",
+              "investor_segment": "UNC",
+              "sentiment": "NEG",
+              "relevance_flag": "Y"
+            }
+          },
+          {
+            "id": "play_store:a2415644-2a72-4c2b-9df6-c23d912e0be5",
+            "source": "play_store",
+            "quote": "tracking of external funds and updation is paused from the last many days..",
+            "tags": {
+              "journey_stage": "S3",
+              "lapse_type": "UNC",
+              "drop_trigger": "NA",
+              "expectation": "UNC",
+              "in_app_friction": "NA",
+              "investor_segment": "UNC",
+              "sentiment": "NEU",
+              "relevance_flag": "Y"
+            }
+          },
+          {
+            "id": "play_store:5ac289a0-3d06-4a24-8b7b-c1de6aee4419",
+            "source": "play_store",
+            "quote": "App not working properly evertime failed to load data",
+            "tags": {
+              "journey_stage": "UNC",
+              "lapse_type": "UNC",
+              "drop_trigger": "NA",
+              "expectation": "UNC",
+              "in_app_friction": "NA",
+              "investor_segment": "UNC",
+              "sentiment": "NEG",
+              "relevance_flag": "Y"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "known_biases": [
+    "Play Store reviews overweight app crashes and payment rage",
+    "English-heavy corpus under-represents Hindi/Hinglish journeys",
+    "Rules fallback tagging \u2014 re-run with GROQ for production labels",
+    "Segment fields mostly UNC \u2014 do not treat as demographic facts",
+    "Platform staff replies excluded via text heuristics (see export)"
+  ]
+}

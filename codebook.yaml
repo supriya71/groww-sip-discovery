@@ -1,0 +1,87 @@
+# Discovery tagging codebook — short codes in model JSON, expand to full names in pipeline.
+version: "1.0"
+
+fields:
+  - journey_stage
+  - lapse_type
+  - drop_trigger
+  - expectation
+  - in_app_friction
+  - investor_segment
+  - sentiment
+  - relevance_flag
+
+codes:
+  journey_stage:
+    UNC: unclear
+    S0: pre_start_research
+    S1: sip_start
+    S2: early_months_1_3
+    S3: mid_months_4_8
+    S4: late_months_9_12
+    S5: post_lapse_or_restart
+    NA: not_applicable
+
+  lapse_type:
+    UNC: unclear
+    NON: continuing_no_lapse
+    PAU: paused_sip
+    RED: reduced_sip_amount
+    STO: stopped_or_cancelled
+    CON: considering_pause_or_stop
+    NA: not_applicable
+
+  drop_trigger:
+    UNC: unclear
+    CF: cash_flow_or_emi_pressure
+    MF: market_fear_or_volatility
+    UR: underwhelming_returns
+    CX: complexity_or_confusion
+    LE: life_event
+    GA: goal_achieved
+    SP: switched_platform
+    SU: bad_support
+    MD: mandate_or_autopay_failure
+    NA: not_applicable
+
+  expectation:
+    UNC: unclear
+    PS: passive_long_term_wealth
+    QG: quick_growth_short_term
+    FD: beat_fd_or_savings
+    GU: guaranteed_or_fixed_returns
+    TM: market_timing
+    NA: not_applicable
+
+  in_app_friction:
+    UNC: unclear
+    NAV: nav_or_units_confusion
+    ST: statement_or_ledger
+    PM: pause_modify_or_cancel_flow
+    NT: notifications_or_alerts
+    KY: kyc_or_payment_rail
+    PF: performance_display_or_xirr
+    UI: comparison_or_discovery_ui
+    NA: not_applicable
+
+  investor_segment:
+    UNC: unclear
+    SL: salaried
+    GIG: gig_or_irregular_income
+    STU: student
+    YNG: young_first_job
+    FAM: family_pressure_or_dependents
+    SLF: self_directed_research
+    INF: influencer_or_peer_led
+    NA: not_applicable
+
+  sentiment:
+    UNC: unclear
+    POS: positive
+    NEG: negative
+    MIX: mixed
+    NEU: neutral
+
+  relevance_flag:
+    Y: filter_yes
+    U: filter_unsure
