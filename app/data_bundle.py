@@ -11,6 +11,7 @@ import streamlit as st
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 EXPORT = REPO_ROOT / "data" / "export"
+STREAMLIT_CLOUD_URL = "https://groww-sip-discovery.streamlit.app"
 
 CHART_COLORS = [
     "#0072B2",
@@ -131,4 +132,11 @@ def init_view_filters() -> tuple[dict[str, Any], dict[str, Any], bool]:
     meta = load_meta()
     exclude_reddit = st.sidebar.checkbox("Exclude curated Reddit", value=False)
     counts = active_counts(meta, exclude_reddit=exclude_reddit)
+    st.sidebar.divider()
+    st.sidebar.caption("Live dashboard")
+    st.sidebar.link_button(
+        "Open Streamlit Cloud app",
+        STREAMLIT_CLOUD_URL,
+        use_container_width=True,
+    )
     return meta, counts, exclude_reddit

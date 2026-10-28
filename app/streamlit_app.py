@@ -356,12 +356,88 @@ def page_validation() -> None:
     st.title("Validation & limitations")
     render_data_banner(meta, counts)
     val = load_json("validation.json")
-    st.markdown(f"**Filter:** {val.get('filter_prompt_version')}")
-    st.markdown(f"**Tag:** {val.get('tag_prompt_version')}")
 
-    with st.expander("Inter-model agreement (30 items)", expanded=False):
+    tab_human, tab_pipeline, tab_limits = st.tabs(
+        ["Human QA", "Pipeline checks", "Limitations & biases"]
+    )
+
+    with tab_human:
+        st.markdown("#### Human labelling (20-post blind sheet)")
+        lab = val.get("human_labelling") or {}
+        if lab.get("sample_size"):
+            c1, c2, c3 = st.columns(3)
+            c1.metric("Posts scored", lab.get("sample_size"))
+            if lab.get("overall_pct") is not None:
+                c2.metric("Field agreement (overall)", f"{lab.get('overall_pct')}%")
+            c3.metric("Disagreements", len(lab.get("disagreements") or []))
+            if lab.get("strata_note"):
+                st.caption(lab.get("strata_note"))
+            field_rows = [
+                {
+                    "Field": (lab.get("fields") or {}).get(k, {}).get("label", k),
+                    "Agree": (lab.get("fields") or {}).get(k, {}).get("agree"),
+                    "Total": (lab.get("fields") or {}).get(k, {}).get("total"),
+                    "%": (lab.get("fields") or {}).get(k, {}).get("pct"),
+                }
+                for k in (
+                    "is_relevant",
+                    "sip_action",
+                    "lapse_type",
+                    "stated_triggers",
+                    "emotion",
+                    "investor_type",
+                )
+                if (lab.get("fields") or {}).get(k, {}).get("total")
+            ]
+            if field_rows:
+                st.markdown("**Agreement by field**")
+                st.dataframe(field_rows, hide_index=True, use_container_width=True)
+            disagreements = lab.get("disagreements") or []
+            if disagreements:
+                st.markdown("**Every disagreement (your label vs export tags)**")
+                st.dataframe(
+                    [
+                        {
+                            "Post id": d.get("id"),
+                            "Field": d.get("field"),
+                            "You": d.get("human"),
+                            "AI / rules": d.get("ai"),
+                            "Snippet": (d.get("snippet") or "")[:100],
+                        }
+                        for d in disagreements
+                    ],
+                    hide_index=True,
+                    use_container_width=True,
+                )
+        else:
+            st.info(
+                "No human labelling scores in this export yet. "
+                "Fill **`data/review/labelling_sheet.xlsx`** (text + context only — no AI tags shown), "
+                "then run **`python -m pipeline.labelling_score`** and **`python -m pipeline.export`**, "
+                "and redeploy or refresh."
+            )
+            st.markdown(
+                f"- Sample manifest: `{val.get('human_labelling_manifest') or 'data/manual/labelling_sample.json'}`  \n"
+                f"- Workbook: `{val.get('human_labelling_workbook') or 'data/review/labelling_sheet.xlsx'}`"
+            )
+
+        st.markdown("#### Human corrections (CSV)")
+        st.caption(val.get("human_corrections_path") or "data/manual/corrections.csv")
+        corrections = val.get("human_corrections") or []
+        if corrections:
+            st.dataframe(corrections, use_container_width=True, hide_index=True)
+        else:
+            st.caption(
+                "Use **`data/review/review_workbook.xlsx`** REVIEW columns, then "
+                "**`python -m pipeline.import_review`** and re-export."
+            )
+
+    with tab_pipeline:
+        st.markdown(f"**Filter:** {val.get('filter_prompt_version')}")
+        st.markdown(f"**Tag:** {val.get('tag_prompt_version')}")
         inter = val.get("inter_model_agreement") or {}
         if inter:
+            st.markdown("**Inter-model agreement (30-item pilot)**")
             st.write(
                 f"Mean field agreement **{inter.get('overall', {}).get('mean_field_agreement_pct')}%**"
             )
@@ -376,75 +452,28 @@ def page_validation() -> None:
                     for f, s in (inter.get("field_agreement") or {}).items()
                 ],
                 hide_index=True,
+                use_container_width=True,
             )
-
-    lab = val.get("human_labelling") or {}
-    if lab.get("sample_size"):
-        st.subheader("Human labelling agreement (20-post sheet)")
-        st.caption(val.get("human_labelling_workbook") or "data/review/labelling_sheet.xlsx")
-        st.caption(lab.get("strata_note") or "")
-        if lab.get("overall_pct") is not None:
-            st.metric("Overall field agreement", f"{lab.get('overall_pct')}%")
-        field_rows = [
-            {
-                "Field": (lab.get("fields") or {}).get(k, {}).get("label", k),
-                "Agree": (lab.get("fields") or {}).get(k, {}).get("agree"),
-                "Total": (lab.get("fields") or {}).get(k, {}).get("total"),
-                "%": (lab.get("fields") or {}).get(k, {}).get("pct"),
-            }
-            for k in (
-                "is_relevant",
-                "sip_action",
-                "lapse_type",
-                "stated_triggers",
-                "emotion",
-                "investor_type",
-            )
-            if (lab.get("fields") or {}).get(k, {}).get("total")
-        ]
-        if field_rows:
-            st.dataframe(field_rows, hide_index=True, width="stretch")
-        disagreements = lab.get("disagreements") or []
-        if disagreements:
-            st.markdown("**Every disagreement (human vs AI)**")
-            st.dataframe(
-                [
-                    {
-                        "id": d.get("id"),
-                        "Field": d.get("field"),
-                        "Human": d.get("human"),
-                        "AI": d.get("ai"),
-                        "Snippet": (d.get("snippet") or "")[:80],
-                    }
-                    for d in disagreements
-                ],
-                hide_index=True,
-                width="stretch",
-            )
-    else:
-        st.caption(
-            "Human labelling: run `python -m pipeline.labelling_export`, fill "
-            "`data/review/labelling_sheet.xlsx`, then `python -m pipeline.labelling_score` and re-export."
-        )
-
-    st.subheader(f"Human corrections ({val.get('human_corrections_path')})")
-    corrections = val.get("human_corrections") or []
-    if corrections:
-        st.dataframe(corrections, use_container_width=True, hide_index=True)
-    else:
-        st.caption("No correction rows yet (add rows to data/manual/corrections.csv and re-export).")
-
-    with st.expander("Tag audit samples (20 per suspicious rule)", expanded=False):
         audit = val.get("tag_audit") or {}
-        st.caption(audit.get("rule_fix"))
-        for block in audit.get("audits") or []:
-            st.markdown(f"**{block.get('reason')}** (population {block.get('population')})")
-            for s in block.get("samples") or []:
-                st.text(f"{s.get('id')}: {(s.get('quote') or '')[:120]}")
+        if audit.get("audits"):
+            st.markdown("**Tag audit samples (suspicious rules)**")
+            st.caption(audit.get("rule_fix"))
+            for block in audit.get("audits") or []:
+                with st.expander(
+                    f"{block.get('reason')} — population {block.get('population')}",
+                    expanded=False,
+                ):
+                    for s in block.get("samples") or []:
+                        st.text(f"{s.get('id')}: {(s.get('quote') or '')[:140]}")
 
-    with st.expander("Known biases", expanded=False):
+    with tab_limits:
+        st.markdown("**Known corpus biases**")
         for b in val.get("known_biases") or []:
             st.markdown(f"- {b}")
+        st.markdown("**Tag models referenced in pipeline**")
+        for model in val.get("tag_models") or []:
+            st.markdown(f"- `{model}`")
+        st.caption(f"Golden set size: {val.get('golden_set_size', 0)}")
 
 
 if not bundle_ready():
@@ -459,7 +488,7 @@ pages = [
     st.Page(page_segments, title="Segments & sources", icon="👥"),
     st.Page(page_evidence, title="Evidence explorer", icon="🔍"),
     st.Page(page_ask, title="Ask the data", icon="💬"),
-    st.Page(page_validation, title="Validation", icon="✅"),
+    st.Page(page_validation, title="Validation & QA", icon="✅"),
 ]
 
 pg = st.navigation(pages)

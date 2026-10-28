@@ -60,9 +60,12 @@
   "golden_set_size": 0,
   "human_corrections": [],
   "human_corrections_path": "data/manual/corrections.csv",
+  "human_labelling": {},
+  "human_labelling_workbook": "data/review/labelling_sheet.xlsx",
+  "human_labelling_manifest": "data/manual/labelling_sample.json",
   "ai_corrections": [],
   "tag_audit": {
-    "audited_at": "2026-10-28T09:33:48.792222+00:00",
+    "audited_at": "2026-10-28T10:32:35.701038+00:00",
     "rule_fix": "pipeline/rules_engine.py v2 (UR MF-only, lapse/stop, sentiment order)",
     "audits": [
       {
