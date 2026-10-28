@@ -1,0 +1,149 @@
+{
+  "created_at": "2026-10-28T10:25:48.919816+00:00",
+  "workbook": "data/review/labelling_sheet.xlsx",
+  "sample_size": 20,
+  "seed": 42,
+  "strata_note": "Tagged corpus is play_store-only today; spread uses app platform (Groww / Paytm Money / Coin), Hinglish, hard-case audit flags, and diverse lapse/trigger codes. When reddit, youtube, tradingqna, and app_store are tagged, re-run export for true 5-source spread.",
+  "items": [
+    {
+      "id": "play_store:9fac461a-f6d9-44e6-87c3-e631d99a51e3",
+      "stratum": "platform:Groww",
+      "selection_reason": "App platform (Groww)",
+      "app_label": "Groww",
+      "language": "en"
+    },
+    {
+      "id": "play_store:12f0ba51-9904-4e36-90f1-8b2964454ced",
+      "stratum": "platform:Paytm",
+      "selection_reason": "App platform (Paytm Money)",
+      "app_label": "Paytm Money",
+      "language": "en"
+    },
+    {
+      "id": "play_store:886e28b8-52c6-4df8-a60e-4c1be0705efc",
+      "stratum": "platform:Coin",
+      "selection_reason": "App platform (Coin by Zerodha)",
+      "app_label": "Coin by Zerodha",
+      "language": "en"
+    },
+    {
+      "id": "play_store:a028ea6e-e31d-4456-a55e-155037a842df",
+      "stratum": "language:hinglish",
+      "selection_reason": "Hinglish / Hindi",
+      "app_label": "Paytm Money",
+      "language": "hinglish"
+    },
+    {
+      "id": "play_store:737d4960-db5d-4713-aa6a-5bcaa03a328f",
+      "stratum": "hard:audit",
+      "selection_reason": "Hard case (tag audit flag)",
+      "app_label": "Paytm Money",
+      "language": "en"
+    },
+    {
+      "id": "play_store:ff04e029-3882-424d-94df-5e4e28803d6b",
+      "stratum": "lapse:STO",
+      "selection_reason": "Stopped / cancelled SIP",
+      "app_label": "Paytm Money",
+      "language": "en"
+    },
+    {
+      "id": "play_store:73c556f9-82cf-442f-936a-e31bd235b7ba",
+      "stratum": "lapse:PAU",
+      "selection_reason": "Paused SIP",
+      "app_label": "Paytm Money",
+      "language": "en"
+    },
+    {
+      "id": "play_store:64740ba7-a7cc-4e8e-b382-d5ee6c91db57",
+      "stratum": "trigger:UR",
+      "selection_reason": "Underwhelming returns trigger",
+      "app_label": "Groww",
+      "language": "en"
+    },
+    {
+      "id": "play_store:78686b14-ae00-4f06-b2c1-a7229898a517",
+      "stratum": "trigger:MD",
+      "selection_reason": "Mandate failure trigger",
+      "app_label": "Paytm Money",
+      "language": "en"
+    },
+    {
+      "id": "play_store:9deb0400-9e1b-4a36-9ce3-a68e9f6bfc83",
+      "stratum": "trigger:CF",
+      "selection_reason": "Cash-flow trigger",
+      "app_label": "Coin by Zerodha",
+      "language": "en"
+    },
+    {
+      "id": "play_store:f5c642cf-ef14-48c7-9df5-907b9b59e374",
+      "stratum": "trigger:MF",
+      "selection_reason": "Market fear trigger",
+      "app_label": "Groww",
+      "language": "en"
+    },
+    {
+      "id": "play_store:e70d33a4-346e-4386-a1d4-21828afc2278",
+      "stratum": "lapse:NON-edge",
+      "selection_reason": "Continuing but negative tone",
+      "app_label": "Paytm Money",
+      "language": "en"
+    },
+    {
+      "id": "play_store:ac0bb210-7282-49c2-b892-8c94ed19299e",
+      "stratum": "platform:Groww",
+      "selection_reason": "App platform (Groww)",
+      "app_label": "Groww",
+      "language": "en"
+    },
+    {
+      "id": "play_store:353d66be-5fa0-404a-864d-4ec2bb668e73",
+      "stratum": "platform:Paytm",
+      "selection_reason": "App platform (Paytm Money)",
+      "app_label": "Paytm Money",
+      "language": "en"
+    },
+    {
+      "id": "play_store:ed10b3a9-9213-4788-afe2-4d9878454d16",
+      "stratum": "platform:Coin",
+      "selection_reason": "App platform (Coin by Zerodha)",
+      "app_label": "Coin by Zerodha",
+      "language": "en"
+    },
+    {
+      "id": "play_store:2e2bcd43-692e-4970-a3f0-a3893925816e",
+      "stratum": "language:hinglish",
+      "selection_reason": "Hinglish / Hindi",
+      "app_label": "Paytm Money",
+      "language": "hinglish"
+    },
+    {
+      "id": "play_store:681e672f-bc91-4c68-b761-bd52b93e03a4",
+      "stratum": "hard:audit",
+      "selection_reason": "Hard case (tag audit flag)",
+      "app_label": "Coin by Zerodha",
+      "language": "en"
+    },
+    {
+      "id": "play_store:c999bf1e-96b0-4816-930e-e924560ac263",
+      "stratum": "lapse:STO",
+      "selection_reason": "Stopped / cancelled SIP",
+      "app_label": "Paytm Money",
+      "language": "en"
+    },
+    {
+      "id": "play_store:5c0907e0-c6b4-4c54-8668-8b4132385703",
+      "stratum": "lapse:PAU",
+      "selection_reason": "Paused SIP",
+      "app_label": "Paytm Money",
+      "language": "en"
+    },
+    {
+      "id": "play_store:ed5b67b1-e483-44a3-b0bc-965fd9fd8c39",
+      "stratum": "trigger:UR",
+      "selection_reason": "Underwhelming returns trigger",
+      "app_label": "Paytm Money",
+      "language": "en"
+    }
+  ]
+}

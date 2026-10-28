@@ -23,6 +23,7 @@ tools/
 # Local-only / private (never publish)
 CLAUDE.md
 data/processed/
+data/review/
 data/export/.ask_usage.json
 
 # Raw + large derived (export bundle is tracked for Cloud deploy)

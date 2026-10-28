@@ -378,6 +378,55 @@ def page_validation() -> None:
                 hide_index=True,
             )
 
+    lab = val.get("human_labelling") or {}
+    if lab.get("sample_size"):
+        st.subheader("Human labelling agreement (20-post sheet)")
+        st.caption(val.get("human_labelling_workbook") or "data/review/labelling_sheet.xlsx")
+        st.caption(lab.get("strata_note") or "")
+        if lab.get("overall_pct") is not None:
+            st.metric("Overall field agreement", f"{lab.get('overall_pct')}%")
+        field_rows = [
+            {
+                "Field": (lab.get("fields") or {}).get(k, {}).get("label", k),
+                "Agree": (lab.get("fields") or {}).get(k, {}).get("agree"),
+                "Total": (lab.get("fields") or {}).get(k, {}).get("total"),
+                "%": (lab.get("fields") or {}).get(k, {}).get("pct"),
+            }
+            for k in (
+                "is_relevant",
+                "sip_action",
+                "lapse_type",
+                "stated_triggers",
+                "emotion",
+                "investor_type",
+            )
+            if (lab.get("fields") or {}).get(k, {}).get("total")
+        ]
+        if field_rows:
+            st.dataframe(field_rows, hide_index=True, width="stretch")
+        disagreements = lab.get("disagreements") or []
+        if disagreements:
+            st.markdown("**Every disagreement (human vs AI)**")
+            st.dataframe(
+                [
+                    {
+                        "id": d.get("id"),
+                        "Field": d.get("field"),
+                        "Human": d.get("human"),
+                        "AI": d.get("ai"),
+                        "Snippet": (d.get("snippet") or "")[:80],
+                    }
+                    for d in disagreements
+                ],
+                hide_index=True,
+                width="stretch",
+            )
+    else:
+        st.caption(
+            "Human labelling: run `python -m pipeline.labelling_export`, fill "
+            "`data/review/labelling_sheet.xlsx`, then `python -m pipeline.labelling_score` and re-export."
+        )
+
     st.subheader(f"Human corrections ({val.get('human_corrections_path')})")
     corrections = val.get("human_corrections") or []
     if corrections:

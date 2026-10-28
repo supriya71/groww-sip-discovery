@@ -76,6 +76,9 @@ def apply_corrections(row: dict[str, Any], corrections: list[dict[str, str]]) ->
         elif field in tags:
             tags[field] = corr.get("new_value") or tags[field]
             changed = True
+        elif field == "quote":
+            row["quote"] = corr.get("new_value") or row.get("quote")
+            changed = True
     if changed:
         row["tags"] = tags
         row["manual_correction_applied"] = True

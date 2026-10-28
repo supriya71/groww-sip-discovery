@@ -596,6 +596,10 @@ def build_validation(tag_audit: dict[str, Any]) -> dict[str, Any]:
     if golden.is_file():
         golden_n = sum(1 for line in golden.read_text(encoding="utf-8").splitlines() if line.strip())
     corrections = load_corrections()
+    labelling_path = REPO_ROOT / "data" / "manual" / "labelling_agreement.json"
+    human_labelling: dict[str, Any] = {}
+    if labelling_path.is_file():
+        human_labelling = json.loads(labelling_path.read_text(encoding="utf-8"))
     return {
         "filter_prompt_version": "rules_fallback_v2 (export re-apply; GROQ unset)",
         "tag_prompt_version": "codebook_v1 + rules_engine v2",
@@ -604,6 +608,9 @@ def build_validation(tag_audit: dict[str, Any]) -> dict[str, Any]:
         "golden_set_size": golden_n,
         "human_corrections": corrections,
         "human_corrections_path": "data/manual/corrections.csv",
+        "human_labelling": human_labelling,
+        "human_labelling_workbook": "data/review/labelling_sheet.xlsx",
+        "human_labelling_manifest": "data/manual/labelling_sample.json",
         "ai_corrections": [],
         "tag_audit": tag_audit,
         "known_biases": [
