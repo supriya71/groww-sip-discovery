@@ -11,7 +11,7 @@ import streamlit as st
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 EXPORT = REPO_ROOT / "data" / "export"
-STREAMLIT_CLOUD_URL = "https://groww-sip-discovery.streamlit.app"
+STREAMLIT_CLOUD_URL = "https://sip-discovery-groww.streamlit.app/"
 
 CHART_COLORS = [
     "#0072B2",
